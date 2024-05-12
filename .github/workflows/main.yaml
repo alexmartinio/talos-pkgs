@@ -10,7 +10,7 @@ on:
 
 jobs:
   uboot:
-
+    runs-on: ubuntu-latest
     permissions:
       contents: read
       packages: write
@@ -57,7 +57,7 @@ jobs:
           CI_ARGS: "--cache-from=ghcr.io/${{ github.actor }}/u-boot:cache --cache-to=ghcr.io/${{ github.actor }}/u-boot:cache"
 
   kernel:
-
+    runs-on: ubuntu-latest
     permissions:
       contents: read
       packages: write
